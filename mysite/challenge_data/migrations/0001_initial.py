@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('id', models.IntegerField(primary_key=True, serialize=False)),
                 ('submitted_date_time', models.DateTimeField()),
                 ('status', models.CharField(max_length=100)),
-                ('creator', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='ideas', to='challenges.creator')),
+                ('creator', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='ideas', to='challenge_data.creator')),
                 ('times_shared', models.IntegerField()),
                 ('votes', models.IntegerField()),
                 ('comments', models.IntegerField()),

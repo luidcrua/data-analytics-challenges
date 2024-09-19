@@ -1,6 +1,6 @@
 import csv
 from django.core.management.base import BaseCommand
-from challenges.models import Creator, Idea
+from challenge_data.models import Creator, Idea
 from datetime import datetime, timezone
 
 
